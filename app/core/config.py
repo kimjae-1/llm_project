@@ -30,6 +30,7 @@ class Settings(BaseSettings):
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
+        extra = "ignore"  # 추가: 정의되지 않은 env 변수 무시
 
 
 
